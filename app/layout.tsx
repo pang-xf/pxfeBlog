@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     default: seo.title,
   },
   description: seo.description,
-  keywords: 'Cali,Cali Castle,郭晓楠,佐玩,创始人,CEO,开发者,设计师,细节控,创新',
+  keywords: 'PXFE,PX.FE,前端,独立开发,React,小程序',
   manifest: '/site.webmanifest',
   robots: {
     index: true,
@@ -34,13 +34,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: {
       default: seo.title,
-      template: '%s | Cali Castle',
+      template: '%s | PX FE',
     },
     description: seo.description,
-    siteName: 'Cali Castle',
+    siteName: 'PX.FE',
     locale: 'zh_CN',
     type: 'website',
-    url: 'https://cali.so',
+    url: 'https://pxfe.top',
   },
   twitter: {
     site: '@thecalicastle',

@@ -63,9 +63,10 @@ export function Headline() {
           duration: 0.3,
         }}
       >
-        <Developer />，<Designer />，
+        {/* <Developer />，<Designer />，
         <span className="block h-2" />
-        <OCD />，<Founder />
+        <OCD />，<Founder /> */}
+        <Developer />
       </motion.h1>
       <motion.p
         className="mt-6 text-base text-zinc-600 dark:text-zinc-400"
@@ -107,29 +108,29 @@ export function Headline() {
           aria-label="我的推特"
           platform="twitter"
         />
-        <SocialLink
+        {/* <SocialLink
           href="https://cali.so/youtube"
           aria-label="我的 YouTube"
           platform="youtube"
-        />
+        /> */}
         <SocialLink
-          href="https://cali.so/bilibili"
+          href="https://pxfe.top/bilibili"
           aria-label="我的 Bilibili"
           platform="bilibili"
         />
         <SocialLink
-          href="https://cali.so/github"
+          href="https://pxfe.top/github"
           aria-label="我的 GitHub"
           platform="github"
         />
-        <SocialLink
+        {/* <SocialLink
           href="https://cali.so/tg"
           aria-label="我的 Telegram"
           platform="telegram"
-        />
+        /> */}
         <SocialLink href="/feed.xml" platform="rss" aria-label="RSS 订阅" />
         <SocialLink
-          href="mailto:hi@cali.so"
+          href="mailto:hi@pxfe.top"
           aria-label="我的邮箱"
           platform="mail"
         />

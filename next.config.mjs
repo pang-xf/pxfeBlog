@@ -25,37 +25,32 @@ const nextConfig = {
     return [
       {
         "source": "/twitter",
-        "destination": "https://x.com/thecalicastle",
+        "destination": "https://x.com/Pang_xf",
         "permanent": true
       },
-      {
-        "source": "/x",
-        "destination": "https://x.com/thecalicastle",
-        "permanent": true
-      },
-      {
-        "source": "/youtube",
-        "destination": "https://youtube.com/@calicastle",
-        "permanent": true
-      },
-      {
-        "source": "/tg",
-        "destination": "https://t.me/cali_so",
-        "permanent": true
-      },
-      {
-        "source": "/linkedin",
-        "destination": "https://www.linkedin.com/in/calicastle/",
-        "permanent": true
-      },
+      // {
+      //   "source": "/youtube",
+      //   "destination": "https://youtube.com/@calicastle",
+      //   "permanent": true
+      // },
+      // {
+      //   "source": "/tg",
+      //   "destination": "https://t.me/cali_so",
+      //   "permanent": true
+      // },
+      // {
+      //   "source": "/linkedin",
+      //   "destination": "https://www.linkedin.com/in/calicastle/",
+      //   "permanent": true
+      // },
       {
         "source": "/github",
-        "destination": "https://github.com/CaliCastle",
+        "destination": "https://github.com/pang-xf",
         "permanent": true
       },
       {
         "source": "/bilibili",
-        "destination": "https://space.bilibili.com/8350251",
+        "destination": "https://space.bilibili.com/39205632",
         "permanent": true
       }
     ]
