@@ -9,8 +9,21 @@ import { PencilSwooshIcon } from '~/assets'
 import { Container } from '~/components/ui/Container'
 import { getSettings } from '~/sanity/queries'
 
+const mockData = {
+  projects: [],
+  heroPhotos: [],
+  resume: [
+    {
+      company: '',
+      title: '',
+      start: '',
+      end: '',
+      logo: '',
+    }
+  ]
+}
 export default async function BlogHomePage() {
-  const settings = await getSettings()
+  const settings = await getSettings() || mockData
 
   return (
     <>
