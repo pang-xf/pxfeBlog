@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Balancer from 'react-wrap-balancer'
 
 import { SparkleIcon, UserSecurityIcon } from '~/assets'
-import { PeekabooLink } from '~/components/links/PeekabooLink'
+// import { PeekabooLink } from '~/components/links/PeekabooLink'
 import { SocialLink } from '~/components/links/SocialLink'
 
 function Developer() {
@@ -79,11 +79,15 @@ export function Headline() {
           delay: 0.1,
         }}
       >
-        <Balancer>
-          我是 Cali，
+        {/* <Balancer>
+          这里是 PX.FE
           <PeekabooLink href="https://zolplay.com">佐玩</PeekabooLink>
           创始人，目前带领着佐玩致力于创造一个充满创造力的工作环境，同时鼓励团队创造影响世界的产品。
           我热爱开发，设计，创新，享受生活，以及在未知领域中探索。
+        </Balancer> */}
+        <Balancer>
+          这里是 PX.FE，目前正在探索更多独立产品的可能性。
+          深耕前端，不止前端。
         </Balancer>
       </motion.p>
       <motion.div
