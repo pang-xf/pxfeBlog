@@ -14,7 +14,7 @@ import { seo } from '~/lib/seo'
 export const metadata: Metadata = {
   metadataBase: seo.url,
   title: {
-    template: '%s | Cali Castle',
+    template: '%s | PX.FE',
     default: seo.title,
   },
   description: seo.description,
@@ -42,13 +42,13 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://pxfe.top',
   },
-  twitter: {
-    site: '@thecalicastle',
-    creator: '@thecalicastle',
-    card: 'summary_large_image',
-    title: seo.title,
-    description: seo.description,
-  },
+  // twitter: {
+  //   site: '@thecalicastle',
+  //   creator: '@thecalicastle',
+  //   card: 'summary_large_image',
+  //   title: seo.title,
+  //   description: seo.description,
+  // },
   alternates: {
     canonical: url('/'),
     types: {
