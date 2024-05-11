@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import React from 'react'
 
 import { BlogPosts } from '~/app/(main)/blog/BlogPosts'
@@ -48,6 +49,7 @@ export default async function BlogHomePage() {
           </aside>
         </div>
       </Container>
+      <SpeedInsights />
     </>
   )
 }
