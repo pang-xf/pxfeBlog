@@ -1,3 +1,11 @@
+/*
+ * @Author: 庞晓峰 335136854@qq.com
+ * @Date: 2024-05-11 13:10:23
+ * @LastEditors: 庞晓峰 335136854@qq.com
+ * @LastEditTime: 2024-05-13 15:16:30
+ * @FilePath: /pxfeBlog/app/layout.tsx
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 import './globals.css'
 import './clerk.css'
 import './prism.css'
@@ -55,6 +63,9 @@ export const metadata: Metadata = {
       'application/rss+xml': [{ url: 'rss', title: 'RSS 订阅' }],
     },
   },
+  other: {
+    ['baidu-site-verification']: 'codeva-Gaky6541Zl'
+  }
 }
 
 export const viewport: Viewport = {
