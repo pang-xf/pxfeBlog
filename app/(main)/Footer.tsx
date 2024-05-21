@@ -127,11 +127,20 @@ export async function Footer() {
             </div>
           </Container.Inner>
           <Container.Inner>
-            <p className="text-sm text-zinc-500/80 dark:text-zinc-400/80">
-              <span className="transition hover:text-lime-500 dark:hover:text-lime-400">
-                蜀ICP备：2024072705号
-              </span>
-            </p>
+            <div className="flex flex-col items-center justify-between sm:flex-row">
+              <div className="max-w-md">
+                <span className="text-sm text-zinc-500/80 dark:text-zinc-400/80 transition hover:text-lime-500 dark:hover:text-lime-400">
+                  蜀ICP备：2024072705号
+                </span>
+              </div>
+              <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
+                <p className="text-sm text-zinc-500/80 dark:text-zinc-400/80">
+                  本网站由<PeekabooLink href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referralo">
+                    又拍云
+                </PeekabooLink>提供CDN加速服务
+                </p>
+              </div>
+            </div>
           </Container.Inner>
           <Container.Inner>
             <div className="flex flex-col items-center justify-start gap-2 sm:flex-row">
