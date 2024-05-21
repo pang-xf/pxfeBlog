@@ -4,13 +4,14 @@ import Spline from '@splinetool/react-spline'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 
-import { url } from '~/lib'
+// import { url } from '~/lib'
 
 export default function NotFoundPage() {
   return (
     <main className="h-screen">
       <div className="absolute inset-0 h-full w-full">
-        <Spline scene={url('macbook.splinecode').href} />
+        {/* <Spline scene={url('macbook.splinecode').href} /> */}
+        <Spline scene='https://pangxf-notes.oss-cn-chengdu.aliyuncs.com/macbook.splinecode' />
       </div>
 
       <div className="pointer-events-none absolute inset-0 flex h-full w-full flex-col items-center justify-center">
