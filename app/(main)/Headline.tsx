@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Balancer from 'react-wrap-balancer'
 
 // import { SparkleIcon, UserSecurityIcon } from '~/assets'
-// import { PeekabooLink } from '~/components/links/PeekabooLink'
+import { PeekabooLink } from '~/components/links/PeekabooLink'
 import { SocialLink } from '~/components/links/SocialLink'
 
 function Developer() {
@@ -17,19 +17,19 @@ function Developer() {
   )
 }
 
-// function Designer() {
-//   return (
-//     <span className="group relative bg-black/5 p-1 dark:bg-white/5">
-//       <span className="pointer-events-none absolute inset-0 border border-lime-700/90 opacity-70 group-hover:border-dashed group-hover:opacity-100 dark:border-lime-400/90">
-//         <span className="absolute -left-[3.5px] -top-[3.5px] size-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
-//         <span className="absolute -bottom-[3.5px] -right-[3.5px] size-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
-//         <span className="absolute -bottom-[3.5px] -left-[3.5px] size-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
-//         <span className="absolute -right-[3.5px] -top-[3.5px] size-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
-//       </span>
-//       设计师
-//     </span>
-//   )
-// }
+function Designer() {
+  return (
+    <span className="group relative bg-black/5 p-1 dark:bg-white/5">
+      <span className="pointer-events-none absolute inset-0 border border-lime-700/90 opacity-70 group-hover:border-dashed group-hover:opacity-100 dark:border-lime-400/90">
+        <span className="absolute -left-[3.5px] -top-[3.5px] size-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
+        <span className="absolute -bottom-[3.5px] -right-[3.5px] size-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
+        <span className="absolute -bottom-[3.5px] -left-[3.5px] size-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
+        <span className="absolute -right-[3.5px] -top-[3.5px] size-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
+      </span>
+      钓鱼佬
+    </span>
+  )
+}
 
 // function OCD() {
 //   return (
@@ -66,7 +66,7 @@ export function Headline() {
         {/* <Developer />，<Designer />，
         <span className="block h-2" />
         <OCD />，<Founder /> */}
-        <Developer />
+        <Developer />，<Designer />
       </motion.h1>
       <motion.p
         className="mt-6 text-base text-zinc-600 dark:text-zinc-400"
@@ -87,8 +87,7 @@ export function Headline() {
           我热爱开发，设计，创新，享受生活，以及在未知领域中探索。
         </Balancer> */}
         <Balancer>
-          这里是 PX.FE，目前正在探索更多独立产品的可能性。
-          深耕前端，不止前端。
+          这里是 PX.FE，<PeekabooLink href="https://kee.so/xiaomi">主页</PeekabooLink>目前正在探索更多独立产品的可能性。
         </Balancer>
       </motion.p>
       <motion.div
@@ -104,12 +103,12 @@ export function Headline() {
         }}
       >
         <SocialLink
-          href="https://cali.so/twitter"
+          href="https://pxfe.top/twitter"
           aria-label="我的推特"
           platform="twitter"
         />
         {/* <SocialLink
-          href="https://cali.so/youtube"
+          href="https://pxfe.top/youtube"
           aria-label="我的 YouTube"
           platform="youtube"
         /> */}
@@ -124,13 +123,13 @@ export function Headline() {
           platform="github"
         />
         {/* <SocialLink
-          href="https://cali.so/tg"
+          href="https://pxfe.top/tg"
           aria-label="我的 Telegram"
           platform="telegram"
         /> */}
         <SocialLink href="/feed.xml" platform="rss" aria-label="RSS 订阅" />
         <SocialLink
-          href="mailto:hi@pxfe.top"
+          href="mailto:hi@pangxf0809@163.com"
           aria-label="我的邮箱"
           platform="mail"
         />
