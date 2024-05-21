@@ -135,9 +135,9 @@ export async function Footer() {
               </div>
               <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
                 <p className="text-sm text-zinc-500/80 dark:text-zinc-400/80">
-                  本网站由<PeekabooLink href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referralo">
+                  {/* 本网站由<PeekabooLink href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referralo">
                     又拍云
-                </PeekabooLink>提供CDN加速服务
+                </PeekabooLink>提供CDN加速服务 */}
                 </p>
               </div>
             </div>
