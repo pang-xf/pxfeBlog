@@ -49,7 +49,7 @@ function Links() {
 
 async function TotalPageViews() {
   let views: number
-  if (env.VERCEL_ENV === 'production') {
+  if (env.NODE_ENV === 'production') {
     views = await redis.incr(kvKeys.totalPageViews)
   } else {
     views = 345678
@@ -73,7 +73,7 @@ type VisitorGeolocation = {
 }
 async function LastVisitorInfo() {
   let lastVisitor: VisitorGeolocation | undefined = undefined
-  if (env.VERCEL_ENV === 'production') {
+  if (env.NODE_ENV === 'production') {
     const [lv, cv] = await redis.mget<VisitorGeolocation[]>(
       kvKeys.lastVisitor,
       kvKeys.currentVisitor

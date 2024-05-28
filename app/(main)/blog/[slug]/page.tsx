@@ -59,7 +59,7 @@ export default async function BlogPage({
   }
 
   let views: number
-  if (env.VERCEL_ENV === 'production') {
+  if (env.NODE_ENV === 'production') {
     views = await redis.incr(kvKeys.postViews(post._id))
   } else {
     views = 30578
@@ -67,7 +67,7 @@ export default async function BlogPage({
 
   let reactions: number[] = []
   try {
-    if (env.VERCEL_ENV === 'production') {
+    if (env.NODE_ENV === 'production') {
       const res = await fetch(url(`/api/reactions?id=${post._id}`), {
         next: {
           tags: [`reactions:${post._id}`],
@@ -88,7 +88,7 @@ export default async function BlogPage({
 
   let relatedViews: number[] = []
   if (typeof post.related !== 'undefined' && post.related.length > 0) {
-    if (env.VERCEL_ENV === 'development') {
+    if (env.NODE_ENV === 'development') {
       relatedViews = post.related.map(() => Math.floor(Math.random() * 1000))
     } else {
       const postIdKeys = post.related.map(({ _id }) => kvKeys.postViews(_id))

@@ -3,10 +3,7 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 
-import { url } from '~/lib'
-
 export default function NotFoundPage() {
-  console.log('****url****', url('macbook.splinecode'));
   return (
     <main className="h-screen">
       <div className="absolute inset-0 h-full w-full bg-[url('/grid-black.svg')]" />
