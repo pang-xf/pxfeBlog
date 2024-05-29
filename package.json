@@ -2,6 +2,9 @@
   "name": "PX.FE",
   "version": "0.0.1",
   "private": true,
+  "engines": {
+    "node": "18.17.0"
+  },
   "scripts": {
     "build": "next build",
     "db:generate": "drizzle-kit generate:pg",
