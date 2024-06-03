@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     default: seo.title,
   },
   description: seo.description,
-  keywords: 'PXFE,PX.FE,前端,独立开发,React,小程序',
+  keywords: 'Fake，PXFE,前端,独立开发,React,小程序',
   manifest: '/site.webmanifest',
   robots: {
     index: true,

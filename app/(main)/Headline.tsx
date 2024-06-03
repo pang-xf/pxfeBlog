@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import Balancer from 'react-wrap-balancer'
 
-// import { SparkleIcon, UserSecurityIcon } from '~/assets'
+import { SparkleIcon, UserSecurityIcon } from '~/assets'
 import { PeekabooLink } from '~/components/links/PeekabooLink'
 import { SocialLink } from '~/components/links/SocialLink'
 
@@ -31,23 +31,23 @@ function Designer() {
   )
 }
 
-// function OCD() {
-//   return (
-//     <span className="group inline-flex items-center">
-//       <SparkleIcon className="mr-1 inline-flex transform-gpu transition-transform duration-500 group-hover:rotate-180" />
-//       <span>细节控</span>
-//     </span>
-//   )
-// }
+function OCD() {
+  return (
+    <span className="group inline-flex items-center">
+      <SparkleIcon className="mr-1 inline-flex transform-gpu transition-transform duration-500 group-hover:rotate-180" />
+      <span>细节控</span>
+    </span>
+  )
+}
 
-// function Founder() {
-//   return (
-//     <span className="group inline-flex items-center">
-//       <UserSecurityIcon className="mr-1 inline-flex group-hover:fill-zinc-600/20 dark:group-hover:fill-zinc-200/20" />
-//       <span>创始人</span>
-//     </span>
-//   )
-// }
+function Independent() {
+  return (
+    <span className="group inline-flex items-center">
+      <UserSecurityIcon className="mr-1 inline-flex group-hover:fill-zinc-600/20 dark:group-hover:fill-zinc-200/20" />
+      <span>独立开发</span>
+    </span>
+  )
+}
 
 export function Headline() {
   return (
@@ -63,10 +63,9 @@ export function Headline() {
           duration: 0.3,
         }}
       >
-        {/* <Developer />，<Designer />，
+        <Developer />，<Designer />，
         <span className="block h-2" />
-        <OCD />，<Founder /> */}
-        <Developer />，<Designer />
+        <OCD />，<Independent />
       </motion.h1>
       <motion.p
         className="mt-6 text-base text-zinc-600 dark:text-zinc-400"

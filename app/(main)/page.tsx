@@ -1,4 +1,3 @@
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import React from 'react'
 
 import { BlogPosts } from '~/app/(main)/blog/BlogPosts'
@@ -49,9 +48,8 @@ export default async function BlogHomePage() {
           </aside>
         </div>
       </Container>
-      <SpeedInsights />
     </>
   )
 }
-
+export const runtime = 'edge'
 export const revalidate = 60
