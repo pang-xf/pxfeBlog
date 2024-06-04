@@ -6,7 +6,6 @@ import { Footer } from '~/app/(main)/Footer'
 import { Header } from '~/app/(main)/Header'
 import { QueryProvider } from '~/app/QueryProvider'
 
-export const runtime = "edge";
 export default function BlogLayout({
   children,
 }: {
